@@ -1,2 +1,2 @@
 # flume-analytics
-flume-analytics
+Real-time analytics
