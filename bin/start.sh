@@ -1,0 +1,4 @@
+/opt/flume-analytics/flume01/bin/flume-ng agent -n agent_log -c /opt/flume-analytics/flume01/conf -f /opt/flume-analytics/flume01/conf/flume-content.properties -Dflume.root.logger=INFO,console
+nohup /opt/flume-analytics/flume01/bin/flume-ng agent -n agent_log -c /opt/flume-analytics/flume01/conf -f /opt/flume-analytics/flume01/conf/flume-content.properties -Dflume.root.logger=ERROR,LOGFILE &
+nohup /opt/flume-analytics/flume01/bin/flume-ng agent -n agent_log -c /opt/flume-analytics/flume01/conf -f /opt/flume-analytics/flume01/conf/flume-visit.properties -Dflume.root.logger=ERROR,LOGFILE &
+nohup /opt/flume-analytics/flume01/bin/flume-ng agent -n agent_log -c /opt/flume-analytics/flume01/conf -f /opt/flume-analytics/flume01/conf/flume-action.properties -Dflume.root.logger=ERROR,LOGFILE &
